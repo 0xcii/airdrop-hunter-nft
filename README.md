@@ -1,4 +1,4 @@
-# Bored Ape NFT Minting dApp ( Udemy The Fullstack Nft Minting Website Course)
+# Airdrops NFT Minting dApp ( Udemy The Fullstack Nft Minting Website Course)
 
 This a complete example of fullstack NFT minting dApp. **BoredApe** is built with the purpose of providing an _entry point for future NFT Minting Website_ projects.
 
@@ -59,21 +59,8 @@ To do that;
 - While deploying your contract with hardhat you need to use mainnet as network-name
 
 ```bash
-  # This command will deploy your smart contract on ethereum mainnet
-  npx hardhat run scripts/deployContract.js --network mainnet
-
-  # This command will verify your smart contract on mainnet etherscan
-  npx hardhat run scripts/verifyContract.js --network mainnet
+https://explorer.zksync.io/address/0x480f98ad98AA56D24Cf7e4019473e1927E847cB1
 ```
 
-## Tech Stack
 
-**Client:** React, TailwindCSS, web3.js
 
-**Server:** Alchemy, NextJS, Hardhat
-
-## Support
-
-For support, email codingwithdidem@gmail.com
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/codewithdidem)

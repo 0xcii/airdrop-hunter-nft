@@ -12,31 +12,37 @@ const fortmatic = fortmaticModule({
   apiKey: process.env.NEXT_PUBLIC_FORTMATIC_KEY
 })
 
+const wcV2InitOptions = {
+  projectId: 'abc123...',
+  requiredChains: [1, 324],
+  dappUrl: 'https://app.airdrops.plus'
+}
+
 const injected = injectedModule()
-const walletConnect = walletConnectModule()
+const walletConnect = walletConnectModule(wcV2InitOptions)
 const coinbaseWallet = coinbaseModule()
 
 const initOnboard = init({
   wallets: [walletConnect, coinbaseWallet, injected, fortmatic],
   chains: [
-    // {
-    //   id: '0x1',
-    //   token: 'ETH',
-    //   label: 'Ethereum Mainnet',
-    //   rpcUrl: 'https://mainnet.infura.io/v3/ababf9851fd845d0a167825f97eeb12b'
-    // },
-    // {
-    //   id: '0x3',
-    //   token: 'tROP',
-    //   label: 'Ethereum Ropsten Testnet',
-    //   rpcUrl: 'https://ropsten.infura.io/v3/ababf9851fd845d0a167825f97eeb12b'
-    // },
     {
-      id: '0x4',
-      token: 'rETH',
-      label: 'Ethereum Rinkeby Testnet',
-      rpcUrl: RPC_URL
-    }
+      id: '0x1',
+      token: 'ETH',
+      label: 'Ethereum Mainnet',
+      rpcUrl: 'https://mainnet.infura.io/v3/ababf9851fd845d0a167825f97eeb12b'
+    },
+    {
+      id: '0x324',
+      token: 'ETH',
+      label: 'zkSync Era',
+      rpcUrl: 'https://mainnet.era.zksync.io'
+    },
+    // {
+    //   id: '0x4',
+    //   token: 'rETH',
+    //   label: 'Ethereum Rinkeby Testnet',
+    //   rpcUrl: RPC_URL
+    // }
     // {
     //   id: '0x89',
     //   token: 'MATIC',
