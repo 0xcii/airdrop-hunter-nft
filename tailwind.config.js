@@ -1,28 +1,18 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}'
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      screens: {
+        "5xl": "2000px"
+      },
       fontFamily: {
-        coiny: ['Coiny', ...defaultTheme.fontFamily.sans]
-      },
-      colors: {
-        'brand-purple': 'var(--clr-purple)',
-        'brand-pink': 'var(--clr-pink)',
-        'brand-yellow': 'var(--clr-yellow)',
-        'brand-blue': 'var(--clr-blue)',
-        'brand-green': 'var(--clr-green)',
-        'brand-light': 'var(--clr-light)',
-        'brand-background': 'var(--clr-background)'
-      },
-      animation: {
-        'pulse-slow': 'pulse 10s linear infinite'
+        kanit: ["Kanit", "sans-serif"]
       }
-    }
+    },
   },
-  plugins: []
+  plugins: [],
 }
