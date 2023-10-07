@@ -7,7 +7,7 @@ function Header() {
       <div>
         <div className="pt-5">
           {/* <Image src={"/assets/logo.png"} width={390} height={74} alt="pomedoge"/> */}
-          <a>
+          <a href="http://airdrops.plus/">
               Airdrops Plus
             </a>
         </div>
