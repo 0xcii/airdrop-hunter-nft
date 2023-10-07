@@ -116,7 +116,7 @@ function Mint() {
                 </h3>
               </div> */}
               <div className="w-full flex justify-between items-center">
-              <p>Get Airdrop Hunter Pass, Enjoy the airdrop distribution earned by <a href="https://airdrops.plus/" style={{color: "red"}} target="_blank">👉 Airdrops.Plus!</a></p>
+              <p>Get Airdrop Hunter Pass, Enjoy the airdrop distribution earned by <a href="https://airdrops.plus/" style={{color: "red"}} target="_blank" rel="noreferrer">👉 Airdrops.Plus!</a></p>
               
               </div>
               <div className="w-full h-[200px] flex justify-center items-center overflow-hidden">
