@@ -80,23 +80,23 @@ function Mint() {
             <>
               <div className="relative w-full flex justify-between items-center  py-2">
               <div className="absolute top-12 w-full flex justify-center items-center gap-3 overflow-hidden">
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
-          <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
+              <div className="w-5 h-1 bg-[#60B7BC] rounded-tl-2xl rounded-br-2xl"/>
         </div>
                 <p className="sm:text-xl text-base">
                   {String(address).substring(0, 4)}...
@@ -109,24 +109,31 @@ function Mint() {
                   Build on Zksync Era
                 </button>
               </div>
-              <div className="w-full flex justify-between items-center">
+              {/* <div className="w-full flex justify-between items-center">
                 <h1 className="titleinfo">Status: </h1>
                 <h3 className="textinfo">
                   {"Public"}
                 </h3>
-              </div>
+              </div> */}
               <div className="w-full flex justify-between items-center">
-                <h1 className="titleinfo">Supply</h1>
-                <h3 className="textinfo">
-                  {"?"} /{" "}
-                  {9999}
-                </h3>
-                {/* <h3 className="textinfo">
-                  {Number(CollectionInfo[0]?.result)} /{" "}
-                  {Number(CollectionInfo[1]?.result)}
-                </h3> */}
+              <p>Get Airdrop Hunter Pass, Enjoy the airdrop distribution earned by <a href="https://airdrops.plus/" style={{color: "red"}} target="_blank">👉 Airdrops.Plus!</a></p>
+              
               </div>
-
+              <div className="w-full h-[200px] flex justify-center items-center overflow-hidden">
+                  <Image 
+                      src={"/assets/1.png"} 
+                      layout="intrinsic"
+                      width={210}  
+                      height={500} 
+                      objectFit="contain" 
+                      style={{
+                        borderRadius: '50px',
+                      }} 
+                      className="rounded-lg shadow-lg border-4 border-gray-700 object-center transform perspective-500 rotate-y-[-20deg] animate-rotate duration-200 ease-in-out"                       alt="airdrops"
+                  />
+                
+              </div>
+              
               <div className="w-full flex justify-between items-center">
                 <h1 className="titleinfo">Price: </h1>
                 {!CollectionInfo[3]?.result ? (
